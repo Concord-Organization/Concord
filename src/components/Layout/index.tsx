@@ -1,7 +1,16 @@
 import React from 'react'
+import Header from './header/Header'
 
 interface LayoutProps {
   children: React.ReactNode
+  isHeader: boolean
 }
 
-export const Layout = ({ children }: LayoutProps) => <div>{children}</div>
+export default function Layout({ children, isHeader }: LayoutProps) {
+  return (
+    <div>
+      {isHeader && <Header />}
+      {children}
+    </div>
+  )
+}

@@ -1,8 +1,10 @@
-import { Box } from '@chakra-ui/react'
-import SigninForm from '@src/components/form/SigninForm'
-import { ISigninInput } from '@src/interfaces/formInput/formInputInterface'
 import React from 'react'
 import { FieldErrors, UseFormRegister } from 'react-hook-form'
+import { Box } from '@chakra-ui/react'
+// interfaces
+import { ISigninInput } from '@src/interfaces/formInput/formInputInterface'
+// component
+import SigninForm from '@src/components/form/SigninForm'
 
 interface ISignupViewProps {
   register: UseFormRegister<ISigninInput>

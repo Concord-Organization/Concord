@@ -3,7 +3,7 @@ import SignupViewModel from '@src/viewModel/signup/SignupViewModel'
 
 export default function Signup() {
   return (
-    <Layout isHeader={false}>
+    <Layout header={false}>
       <SignupViewModel />
     </Layout>
   )

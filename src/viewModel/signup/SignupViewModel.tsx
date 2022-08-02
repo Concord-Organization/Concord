@@ -1,8 +1,9 @@
-import { ISignupInput } from '@src/interfaces/formInput/formInputInterface'
-import SignupView from '@src/view/signup/SignupView'
-
 import { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
+// Interfaces
+import { ISignupInput } from '@src/interfaces/formInput/formInputInterface'
+// View
+import SignupView from '@src/view/signup/SignupView'
 
 export default function SignupViewModel() {
   const [emailConfirm, setEmailConfirm] = useState({

@@ -1,16 +1,16 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
-import Header from './header/Header'
+import Aside from './header/Header'
 
 interface LayoutProps {
-  isHeader: boolean
+  header: boolean
   children: React.ReactNode
 }
 
-export default function Layout({ isHeader, children }: LayoutProps) {
+export default function Layout({ header, children }: LayoutProps) {
   return (
     <Box>
-      {isHeader && <Header />}
+      {header && <Aside />}
       {children}
     </Box>
   )

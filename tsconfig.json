@@ -20,6 +20,6 @@
     "incremental": true
   },
   "extends": "./tsconfig.paths.json",
-  "include": ["react-app-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

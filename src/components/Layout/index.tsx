@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react'
 import React from 'react'
 import Header from './header/Header'
 
@@ -8,9 +9,9 @@ interface LayoutProps {
 
 export default function Layout({ children, isHeader }: LayoutProps) {
   return (
-    <div>
+    <Box>
       {isHeader && <Header />}
       {children}
-    </div>
+    </Box>
   )
 }

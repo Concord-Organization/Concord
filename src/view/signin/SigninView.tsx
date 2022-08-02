@@ -1,20 +1,19 @@
 import { Box } from '@chakra-ui/react'
-import SignupForm from '@src/components/form/formParts/SignupForm'
-import { ISignupInput } from '@src/interfaces/formInput/formInputInterface'
+import SigninForm from '@src/components/form/SigninForm'
+import { ISigninInput } from '@src/interfaces/formInput/formInputInterface'
+import React from 'react'
 import { FieldErrors, UseFormRegister } from 'react-hook-form'
 
 interface ISignupViewProps {
-  register: UseFormRegister<ISignupInput>
+  register: UseFormRegister<ISigninInput>
   onSubmit: any
-  errors: FieldErrors<ISignupInput>
-  onButtonsClicks: any
+  errors: FieldErrors<ISigninInput>
 }
 
-export default function SignUpView({
+export default function SigninView({
   register,
   onSubmit,
   errors,
-  onButtonsClicks,
 }: ISignupViewProps) {
   return (
     <Box
@@ -26,12 +25,11 @@ export default function SignUpView({
       justifyContent="center"
       alignItems="center"
     >
-      <SignupForm
+      <SigninForm
         errors={errors}
-        title="회원가입"
+        title="로그인"
         register={register}
         onSubmit={onSubmit}
-        onButtonsClicks={onButtonsClicks}
       />
     </Box>
   )

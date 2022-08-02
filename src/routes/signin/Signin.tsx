@@ -1,3 +1,5 @@
+import SigninViewModel from '@src/viewModel/signin/SigninViewModel'
+
 export default function Signin() {
-  return <div>SignIn</div>
+  return <SigninViewModel />
 }

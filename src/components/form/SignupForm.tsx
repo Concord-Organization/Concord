@@ -1,9 +1,10 @@
-import { Button, Link } from '@chakra-ui/react'
+import { Link } from '@chakra-ui/react'
 import { ISignupInput } from '@src/interfaces/formInput/formInputInterface'
 import { UseFormRegister } from 'react-hook-form'
 import { Link as ReachLink } from 'react-router-dom'
-import Form from './Form'
-import InputSet from './InputSet'
+import Form from './formParts/Form'
+import InputSet from './formParts/InputSet'
+import Submit from './formParts/Submit'
 
 interface ISignupFormProps {
   title: string
@@ -52,15 +53,7 @@ export default function SignupForm({
         text="비밀번호 확인"
         errorMessage={errors?.confirmPassword}
       />
-      <Button
-        type="submit"
-        bg="primary"
-        h="44px"
-        color="white"
-        borderRadius={3}
-      >
-        회원가입
-      </Button>
+      <Submit text="회원가입" />
       <Link as={ReachLink} to="/signin" fontSize="14px" mt="-10px">
         이미 계정이 있으신가요?
       </Link>

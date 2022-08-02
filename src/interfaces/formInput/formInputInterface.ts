@@ -5,3 +5,8 @@ export interface ISignupInput {
   password: string
   confirmPassword: string
 }
+
+export interface ISigninInput {
+  email: string
+  password: string
+}

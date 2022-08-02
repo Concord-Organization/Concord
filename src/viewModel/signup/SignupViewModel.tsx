@@ -1,5 +1,5 @@
 import { ISignupInput } from '@src/interfaces/formInput/formInputInterface'
-import SignUpView from '@src/view/signup/SignUpView'
+import SignupView from '@src/view/signup/SignupView'
 import { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 
@@ -57,7 +57,7 @@ export default function SignupViewModel() {
   }
 
   return (
-    <SignUpView
+    <SignupView
       errors={errors}
       register={register}
       onSubmit={handleSubmit(onValid)}

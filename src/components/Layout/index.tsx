@@ -3,11 +3,11 @@ import React from 'react'
 import Header from './header/Header'
 
 interface LayoutProps {
-  children: React.ReactNode
   isHeader: boolean
+  children: React.ReactNode
 }
 
-export default function Layout({ children, isHeader }: LayoutProps) {
+export default function Layout({ isHeader, children }: LayoutProps) {
   return (
     <Box>
       {isHeader && <Header />}

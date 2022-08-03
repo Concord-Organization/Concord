@@ -5,16 +5,8 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <Box
-      as="header"
-      w="72px"
-      h="100vh"
-      position="fixed"
-      py="12px"
-      zIndex={100}
-      bg="blackAlpha.900"
-    >
-      <Box as="nav" h="100%">
+    <Box as="header" w="72px" h="100vh" py="12px" bg="blackAlpha.900" px="12px">
+      <Box as="nav" h="100%" w="full">
         <Box
           as="ul"
           h="100%"

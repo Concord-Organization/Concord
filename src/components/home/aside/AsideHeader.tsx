@@ -1,28 +1,14 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
+import Search from '@src/components/Atom/Search'
+import HeaderContainer from '@src/components/Atom/HeaderContainer'
 
 export default function AsideHeader() {
   return (
-    <Box
-      h="48px"
-      shadow="md"
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-    >
-      <Box
-        as="button"
-        w="220px"
-        h="28px"
-        bg="primary"
-        borderRadius="3px"
-        textAlign="start"
-        px="6px"
-        fontSize="14px"
-        color="white"
-      >
-        대화 찾기 또는 시작하기
+    <HeaderContainer>
+      <Box w="full" h="28px">
+        <Search text="대화 찾기 또는 시작하기" bgColor="primary" />
       </Box>
-    </Box>
+    </HeaderContainer>
   )
 }

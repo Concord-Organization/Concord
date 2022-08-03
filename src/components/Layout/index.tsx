@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
-import Aside from './header/Header'
+import Header from './header/Header'
 
 interface LayoutProps {
   header: boolean
@@ -9,8 +9,8 @@ interface LayoutProps {
 
 export default function Layout({ header, children }: LayoutProps) {
   return (
-    <Box>
-      {header && <Aside />}
+    <Box display="flex" w="100vw" h="100%">
+      {header && <Header />}
       {children}
     </Box>
   )

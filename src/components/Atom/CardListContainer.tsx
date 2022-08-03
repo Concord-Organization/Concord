@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 
-export default function ChanelListContainer({
+export default function CardListContainer({
   children,
 }: {
   children: React.ReactNode
@@ -12,7 +12,6 @@ export default function ChanelListContainer({
       display="flex"
       flexDirection="column"
       alignItems="center"
-      gap="8px"
       listStyleType="none"
     >
       {children}

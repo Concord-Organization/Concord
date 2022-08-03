@@ -22,6 +22,42 @@ export default function ChanelList() {
       <li>
         <ChanelBadge>Home</ChanelBadge>
       </li>
+      <li>
+        <ChanelBadge>Home</ChanelBadge>
+      </li>
+      <li>
+        <ChanelBadge>Home</ChanelBadge>
+      </li>
+      <li>
+        <ChanelBadge>Home</ChanelBadge>
+      </li>
+      <li>
+        <ChanelBadge>Home</ChanelBadge>
+      </li>
+      <li>
+        <ChanelBadge>Home</ChanelBadge>
+      </li>
+      <li>
+        <ChanelBadge>Home</ChanelBadge>
+      </li>
+      <li>
+        <ChanelBadge>Home</ChanelBadge>
+      </li>
+      <li>
+        <ChanelBadge>Home</ChanelBadge>
+      </li>
+      <li>
+        <ChanelBadge>Home</ChanelBadge>
+      </li>
+      <li>
+        <ChanelBadge>Home</ChanelBadge>
+      </li>
+      <li>
+        <ChanelBadge>Home</ChanelBadge>
+      </li>
+      <li>
+        <ChanelBadge>Home</ChanelBadge>
+      </li>
     </ChanelListContainer>
   )
 }

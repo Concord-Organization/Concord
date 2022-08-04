@@ -4,3 +4,9 @@ export interface IDefaultResponse {
     isOk: boolean
   }
 }
+
+export interface ISigninResponse {
+  data: {
+    accessToken: string
+  }
+}

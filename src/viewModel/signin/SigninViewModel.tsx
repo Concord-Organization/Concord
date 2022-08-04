@@ -4,6 +4,9 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 import { ISigninInput } from '@src/interfaces/formInput/formInputInterface'
 // View
 import SigninView from '@src/view/signin/SigninView'
+import { signinMutation } from '@src/queries/queryHooks/user'
+import { useNavigate } from 'react-router-dom'
+import { validateEmail } from '@src/utils/validation/validate'
 
 export default function SigninViewModel() {
   const {
@@ -13,11 +16,26 @@ export default function SigninViewModel() {
     setError,
   } = useForm<ISigninInput>()
 
+  const { mutate, isLoading } = signinMutation()
+
+  const navigate = useNavigate()
+
   // validation 통과 시 실행 될 함수 formDate에 input 값들 담김
   const onValid: SubmitHandler<ISigninInput> = (formData) => {
-    console.log(formData)
-    setError('password', { message: '비밀번호가 틀립니다.' })
-    setError('email', { message: '이메일이 틀립니다.' })
+    if (!validateEmail(formData.email)) {
+      setError('email', { message: '이메일 형식에 맞춰주세요.' })
+      return
+    }
+    if (isLoading) return
+    mutate(formData, {
+      onSuccess: ({ data }) => {
+        if (data.accessToken) navigate('/')
+      },
+      onError: (error: any) => {
+        setError('email', { message: error.response.data.message })
+        setError('password', { message: error.response.data.message })
+      },
+    })
   }
   return (
     <SigninView

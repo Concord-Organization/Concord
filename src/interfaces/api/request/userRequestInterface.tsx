@@ -7,3 +7,8 @@ export interface ISignupRequest {
 export interface IEmailRequest {
   email: string
 }
+
+export interface ISigninRequest {
+  email: string
+  password: string
+}

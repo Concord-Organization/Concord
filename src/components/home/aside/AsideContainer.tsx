@@ -2,10 +2,9 @@ import { Box } from '@chakra-ui/react'
 import { IChildrenProps } from '@src/interfaces/component/componentInterface'
 import React from 'react'
 
-// Home 화면 Header Container
-export default function HeaderContainer({ children }: IChildrenProps) {
+export default function AsideContainer({ children }: IChildrenProps) {
   return (
-    <Box minH="48px" px="10px" display="flex" alignItems="center">
+    <Box minW="240px" w="240px" h="100%" display="flex" flexDirection="column">
       {children}
     </Box>
   )

@@ -1,6 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 
+// 텍스트 버튼
 export default function TextButton({
   text,
   bgColor,

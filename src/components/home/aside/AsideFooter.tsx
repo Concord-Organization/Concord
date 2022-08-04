@@ -7,6 +7,7 @@ import { RiSettings5Fill } from 'react-icons/ri'
 import ToggleButton from '@src/components/Molecule/ToggleButton'
 import Icon from '@src/components/Atom/Icon'
 
+// 사용자 정보와 마이크 헤드셋 환경설정 이 있는 Footer
 export default function AsideFooter() {
   return (
     <Box
@@ -18,7 +19,7 @@ export default function AsideFooter() {
       boxSizing="border-box"
     >
       <DetailCard
-        mainText="차누다아"
+        mainText="차누다아asdasdsdfahsdfashdflkjashdfjkh"
         subText="#3589"
         Hover={false}
         src="https://avatars.githubusercontent.com/u/93105924?s=400&v=4"

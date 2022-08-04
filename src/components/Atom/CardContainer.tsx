@@ -11,7 +11,7 @@ export default function CardContainer({
   return (
     <Box
       w="100%"
-      h="42px"
+      h="100%"
       px="8px"
       borderRadius="3px"
       cursor="pointer"

@@ -2,10 +2,9 @@ import { Box } from '@chakra-ui/react'
 import { IChildrenProps } from '@src/interfaces/component/componentInterface'
 import React from 'react'
 
-// Home 화면 Header Container
-export default function HeaderContainer({ children }: IChildrenProps) {
+export default function SubTitle({ children }: IChildrenProps) {
   return (
-    <Box minH="48px" px="10px" display="flex" alignItems="center">
+    <Box as="h2" fontSize="12px">
       {children}
     </Box>
   )

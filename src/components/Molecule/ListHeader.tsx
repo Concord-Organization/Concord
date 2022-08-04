@@ -2,12 +2,13 @@ import { Box } from '@chakra-ui/react'
 import React from 'react'
 import { FaUserAlt } from 'react-icons/fa'
 
+// 메인 부분 Header의 정보를 알려주는 간략 타이틀
 export default function ListHeader() {
   return (
     <Box
       display="flex"
       alignItems="center"
-      pl="8px"
+      pl="16px"
       pr="16px"
       borderRight="1px solid gray"
     >

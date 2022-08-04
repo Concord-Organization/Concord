@@ -30,7 +30,14 @@ export default function SignupForm({
         errorMessage={errors?.name}
       />
       <InputSet
-        register={register('email', { required: '이메일을 입력해주세요.' })}
+        register={register('email', {
+          required: '이메일을 입력해주세요.',
+          pattern: {
+            value:
+              /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/,
+            message: '이메일 형식에 맞춰주세요.',
+          },
+        })}
         type="email"
         text="이메일"
         buttonText="확인"

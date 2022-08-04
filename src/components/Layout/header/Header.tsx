@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <Box as="header" w="72px" h="100vh" py="12px" bg="blackAlpha.900" px="12px">
+    <Box as="header" w="72px" h="100%" py="12px" bg="blackAlpha.900" px="12px">
       <Box as="nav" h="100%" w="full">
         <Box
           as="ul"

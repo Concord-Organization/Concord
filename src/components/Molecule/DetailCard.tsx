@@ -4,6 +4,7 @@ import Avatar from '../Atom/Avatar'
 import CardContainer from '../Atom/CardContainer'
 import CardRight from '../Atom/CardRight'
 
+// 아바타와 메인 서브 텍스트가 있는 카드
 export default function DetailCard({
   mainText,
   subText,
@@ -17,12 +18,10 @@ export default function DetailCard({
 }) {
   return (
     <CardContainer noHover={Hover}>
-      <Box mr="8px">
-        <Avatar src={src} />
-      </Box>
+      <Avatar src={src} />
       <CardRight>
         <Box
-          fontSize="16px"
+          fontSize="14px"
           textOverflow="ellipsis"
           whiteSpace="nowrap"
           overflow="hidden"

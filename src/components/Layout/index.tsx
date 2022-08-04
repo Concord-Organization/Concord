@@ -9,7 +9,13 @@ interface LayoutProps {
 
 export default function Layout({ header, children }: LayoutProps) {
   return (
-    <Box display="flex" w="100vw" h="100%">
+    <Box
+      display="inline-flex"
+      h="100vh"
+      w="100vw"
+      overflowX="auto"
+      overflowY="hidden"
+    >
       {header && <Header />}
       {children}
     </Box>

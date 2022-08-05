@@ -7,6 +7,7 @@ import SigninView from '@src/view/signin/SigninView'
 import { signinMutation } from '@src/queries/queryHooks/user'
 import { useNavigate } from 'react-router-dom'
 import { validateEmail } from '@src/utils/validation/validate'
+import { defaultClient } from '@src/queries/api/AxiosConfig'
 
 export default function SigninViewModel() {
   const {
@@ -29,7 +30,9 @@ export default function SigninViewModel() {
     if (isLoading) return
     mutate(formData, {
       onSuccess: ({ data }) => {
-        if (data.accessToken) navigate('/')
+        localStorage.setItem('token', `Bearer ${data.accessToken}`)
+        defaultClient.defaults.headers.common.Authorization = `Bearer ${data.accessToken}`
+        navigate('/')
       },
       onError: (error: any) => {
         setError('email', { message: error.response.data.message })

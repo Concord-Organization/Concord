@@ -20,3 +20,7 @@ export function checkEmailApi(data: IEmailRequest): Promise<IDefaultResponse> {
 export function signinApi(data: ISigninRequest): Promise<ISigninResponse> {
   return defaultClient.post('/user/signin', data)
 }
+
+export function userApi(data: any): Promise<any> {
+  return defaultClient.get('/user/user', data)
+}

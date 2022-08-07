@@ -33,7 +33,7 @@ export const tokenQuery = () => {
       }
     },
     onError() {
-      if (pathname === '/') navigate('/signin')
+      if (pathname === '/' || pathname.includes('friend')) navigate('/signin')
     },
   })
 

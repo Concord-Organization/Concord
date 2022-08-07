@@ -10,3 +10,7 @@ export interface ISigninInput {
   email: string
   password: string
 }
+
+export interface IChatInput {
+  chat: string
+}

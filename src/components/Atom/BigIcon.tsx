@@ -5,6 +5,7 @@ import React from 'react'
 export default function BigIcon({ children }: IChildrenProps) {
   return (
     <Box
+      as="button"
       boxSize="36px"
       display="flex"
       alignItems="center"

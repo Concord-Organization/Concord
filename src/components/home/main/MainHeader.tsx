@@ -10,7 +10,7 @@ export default function MainHeader() {
     <HeaderContainer>
       <Box h="24px" display="flex" alignItems="center">
         {/* 헤더의 간략 타이틀 */}
-        <ListHeader />
+        <ListHeader title="친구" />
         {/*  홈 메인 헤더 카테고리 텝 */}
         <Box display="flex" gap="10px" pl="8px">
           <Tab text="온라인" />

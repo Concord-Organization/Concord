@@ -3,7 +3,7 @@ import React from 'react'
 import { FaUserAlt } from 'react-icons/fa'
 
 // 메인 부분 Header의 정보를 알려주는 간략 타이틀
-export default function ListHeader() {
+export default function ListHeader({ title }: { title: string }) {
   return (
     <Box
       display="flex"
@@ -16,7 +16,7 @@ export default function ListHeader() {
         <FaUserAlt size="24px" />
       </Box>
       <Box as="h3" whiteSpace="nowrap">
-        친구
+        {title}
       </Box>
     </Box>
   )

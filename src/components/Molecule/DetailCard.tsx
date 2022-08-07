@@ -1,4 +1,5 @@
 import { Box } from '@chakra-ui/react'
+import { ICardProps } from '@src/interfaces/component/componentInterface'
 import React from 'react'
 import Avatar from '../Atom/Avatar'
 import CardContainer from '../Atom/CardContainer'
@@ -10,12 +11,7 @@ export default function DetailCard({
   subText,
   Hover,
   src,
-}: {
-  mainText: string
-  subText: string
-  Hover?: boolean
-  src: string
-}) {
+}: ICardProps) {
   return (
     <CardContainer noHover={Hover}>
       <Avatar src={src} />

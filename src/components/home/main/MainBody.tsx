@@ -3,10 +3,11 @@ import SubTitle from '@src/components/Atom/SubTitle'
 import Search from '@src/components/Molecule/Search'
 import React from 'react'
 import FriendList from './FriendList'
+import MainBodyContainer from './MainBodyContainer'
 
 export default function MainBody() {
   return (
-    <Box py="15px" px="20px" h="100%">
+    <MainBodyContainer>
       <Box marginBottom="8px">
         <Search />
       </Box>
@@ -15,6 +16,6 @@ export default function MainBody() {
       </Box>
       {/* 친구들 목록 */}
       <FriendList />
-    </Box>
+    </MainBodyContainer>
   )
 }
